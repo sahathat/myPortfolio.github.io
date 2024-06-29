@@ -4,40 +4,34 @@
 const projects = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		category: 'Web Application',
-		img: require('@/assets/images/web-project-2.jpg'),
+		title: 'Leafy',
+		category: ['Web Application','Machine Learning'],
+		img: require('@/assets/images/projects/1-Leafy.png'),
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
-		category: 'Mobile Application',
-		img: require('@/assets/images/mobile-project-2.jpg'),
+		title: 'Moral IT Help Desk',
+		category: ['Web Application','Dashboard'],
+		img: require('@/assets/images/projects/2-ITHelpDesk.png'),
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
-		category: 'UI/UX Design',
-		img: require('@/assets/images/ui-project-1.jpg'),
+		title: 'Google Certificate Salifort Motors Company - Why employee left?',
+		category: ['Explorational Data Analysis','Dashboard',"Machine Learning"],
+		img: require('@/assets/images/projects/3-SalifortMotors.png'),
 	},
 	{
 		id: 4,
-		title: 'Cloud Storage Platform',
-		category: 'UI/UX Design',
-		img: require('@/assets/images/ui-project-2.jpg'),
+		title: 'OASIP (Online Appointment Scheduling System For Integrated Project Clinics)',
+		category: ['Web Application'],
+		img: require('@/assets/images/projects/4-OASIP.png'),
 	},
 	{
 		id: 5,
-		title: 'React Social App',
-		category: 'Mobile Application',
-		img: require('@/assets/images/mobile-project-1.jpg'),
-	},
-	{
-		id: 6,
-		title: 'Apple Design System',
-		category: 'Web Application',
-		img: require('@/assets/images/web-project-1.jpg'),
-	},
+		title: 'CSGO winner classification',
+		category: ['Machine Learning'],
+		img: require('@/assets/images/projects/ML.png'),
+	}
 ];
 
 export default projects;

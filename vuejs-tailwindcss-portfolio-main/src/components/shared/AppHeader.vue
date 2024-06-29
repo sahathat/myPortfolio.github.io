@@ -1,22 +1,22 @@
 <script>
 import ThemeSwitcher from '../ThemeSwitcher';
-import HireMeModal from '../HireMeModal.vue';
+// import HireMeModal from '../HireMeModal.vue';
 import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
-import Button from '../reusable/Button.vue';
+// import Button from '../reusable/Button.vue';
 
 export default {
 	components: {
 		ThemeSwitcher,
-		HireMeModal,
+		// HireMeModal,
 		AppHeaderLinks,
-		Button,
+		// Button,
 	},
 	data() {
 		return {
 			isOpen: false,
 			theme: '',
-			modal: false,
+			// modal: false,
 			categories: [
 				{
 					id: 1,
@@ -53,20 +53,20 @@ export default {
 		updateTheme(theme) {
 			this.theme = theme;
 		},
-		showModal() {
-			if (this.modal) {
-				// Stop screen scrolling
-				document
-					.getElementsByTagName('html')[0]
-					.classList.remove('overflow-y-hidden');
-				this.modal = false;
-			} else {
-				document
-					.getElementsByTagName('html')[0]
-					.classList.add('overflow-y-hidden');
-				this.modal = true;
-			}
-		},
+		// showModal() {
+		// 	if (this.modal) {
+		// 		// Stop screen scrolling
+		// 		document
+		// 			.getElementsByTagName('html')[0]
+		// 			.classList.remove('overflow-y-hidden');
+		// 		this.modal = false;
+		// 	} else {
+		// 		document
+		// 			.getElementsByTagName('html')[0]
+		// 			.classList.add('overflow-y-hidden');
+		// 		this.modal = true;
+		// 	}
+		// },
 	},
 	updated() {
 		feather.replace();
@@ -83,20 +83,25 @@ export default {
 			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
 				<!-- Header logos -->
-				<div>
+				<div class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<router-link to="/"
-						><img
+						>
+						<span class="w-36 font-general-medium block text-left text-lg text-primary-dark
+						dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300 
+						sm:mx-4 mb-2 sm:py-2 font-bold">Sahathat</span>
+						<!-- </div> -->
+						<!-- <img
 							v-if="theme === 'light'"
 							src="@/assets/images/logo-dark.svg"
 							class="w-36"
 							alt="Dark Logo"
-						/>
-						<img
+						/> -->
+						<!-- <img
 							v-else
 							src="@/assets/images/logo-light.svg"
 							class="w-36"
 							alt="Light Logo"
-						/>
+						/> -->
 					</router-link>
 				</div>
 
@@ -137,21 +142,23 @@ export default {
 			</div>
 
 			<!-- Header links -->
-			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
+			<AppHeaderLinks :isOpen="isOpen" />
+			<!-- :showModal="showModal"  -->
+			
 
 			<!-- Header right section buttons -->
 			<div
 				class="hidden sm:flex justify-between items-center flex-col md:flex-row"
 			>
 				<!-- Hire me button -->
-				<div class="hidden md:block">
+				<!-- <div class="hidden md:block">
 					<Button
 						title="Hire Me"
 						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()"
 						aria-label="Hire Me Button"
 					/>
-				</div>
+				</div> -->
 
 				<!-- Theme switcher large screen -->
 				<theme-switcher
@@ -163,12 +170,12 @@ export default {
 		</div>
 
 		<!-- Hire me modal -->
-		<HireMeModal
+		<!-- <HireMeModal
 			:showModal="showModal"
 			:modal="modal"
 			:categories="categories"
 			aria-modal="Hire Me Modal"
-		/>
+		/> -->
 	</nav>
 </template>
 

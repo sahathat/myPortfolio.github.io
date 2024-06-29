@@ -7,47 +7,37 @@ export default {
 	},
 	data: () => {
 		return {
-			clientsHeading: 'Some of the brands I have worked with',
+			clientsHeading: 'Certificate list',
 			clients: [
 				{
 					id: 1,
-					title: 'Amazon',
-					img: require('@/assets/images/brands/amazon_gray.png'),
+					title: 'ChaiyoGPT Skill baged - tier 1',
+					url: 'https://www.cloudskillsboost.google/public_profiles/45257873-a53c-46a8-a4bc-8597aaf64973',
+					img: require('@/assets/images/certificates/certificate-1.png'),
 				},
 				{
 					id: 2,
-					title: 'Sony',
-					img: require('@/assets/images/brands/sony_gray.png'),
+					title: 'Google certificate - Advanced data analytic',
+					url: 'https://www.coursera.org/account/accomplishments/verify/ZPRJ6N5QW264',
+					img: require('@/assets/images/certificates/certificate-2.png'),
 				},
 				{
 					id: 3,
-					title: 'Adidas',
-					img: require('@/assets/images/brands/adidas_gray.png'),
+					title: 'Google certificate - IT support specialist',
+					url: 'https://www.coursera.org/account/accomplishments/certificate/VENKF2K8Y9H5',
+					img: require('@/assets/images/certificates/certificate-3.png'),
 				},
 				{
 					id: 4,
-					title: 'FILA',
-					img: require('@/assets/images/brands/fila_gray.png'),
+					title: 'Google certificate - Data Analytic',
+					url: 'https://www.coursera.org/account/accomplishments/verify/Q2ZG5BPPKYPS',
+					img: require('@/assets/images/certificates/certificate-4.png'),
 				},
 				{
 					id: 5,
-					title: 'NB',
-					img: require('@/assets/images/brands/nb_gray.png'),
-				},
-				{
-					id: 6,
-					title: 'SAMSUNG',
-					img: require('@/assets/images/brands/samsung_gray.png'),
-				},
-				{
-					id: 7,
-					title: 'CANON',
-					img: require('@/assets/images/brands/canon_gray.png'),
-				},
-				{
-					id: 7,
-					title: 'PUMA',
-					img: require('@/assets/images/brands/puma_gray.png'),
+					title: 'Microsoft Office Specialist - Microsoft excel 2016',
+					url: 'https://www.certiport.com/portal/Pages/ViewTranscript.aspx?printview=true&defaultlang=THA',
+					img: require('@/assets/images/certificates/certificate-5.png'),
 				},
 			],
 		};

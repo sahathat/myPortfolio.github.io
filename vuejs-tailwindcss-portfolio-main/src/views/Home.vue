@@ -21,8 +21,6 @@ export default {
 		<!-- Projects -->
 		<ProjectsGrid />
 
-		
-
 		<!-- Load more projects button -->
 		<div class="mt-10 sm:mt-20 flex justify-center">
 			<router-link

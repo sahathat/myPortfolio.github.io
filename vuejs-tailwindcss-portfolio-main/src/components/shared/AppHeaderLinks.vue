@@ -20,7 +20,7 @@ export default {
 			to="/about"
 			class="font-general-medium block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-indigo-600 dark:hover:text-indigo-300  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 			aria-label="About Me"
-			>About Me</router-link
+			>Profile</router-link
 		>
 		<router-link
 			to="/contact"
@@ -28,7 +28,7 @@ export default {
 			aria-label="Contact"
 			>Contact</router-link
 		>
-		<div
+		<!-- <div
 			class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 		>
 			<button
@@ -38,7 +38,7 @@ export default {
 			>
 				Hire Me
 			</button>
-		</div>
+		</div> -->
 	</div>
 </template>
 
