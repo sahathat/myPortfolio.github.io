@@ -3,11 +3,15 @@ module.exports = {
         module: {
             rules: [
                 {
-                    test: /\.(pdf)$/,
-                    loader: 'file-loader',
-                    options: {
-                        name: `files/[name].[ext]`
-                    }
+                    test: /\.(pdf)(\?.*)?$/,
+                    use: [
+                      {
+                        loader: 'url-loader',
+                        options: {
+                          name: 'files/[name].[hash:8].[ext]'
+                        }
+                      }
+                    ]
                 }
             ],
         },
