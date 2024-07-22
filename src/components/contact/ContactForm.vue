@@ -55,7 +55,7 @@ export default {
 			<div v-if="isSend"
 				class="leading-loose max-w-xl mt-7 p-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-left">
 				<p class="dark:text-primary-light m-2 flex items-center">
-					<i data-feather="alert-circle" class="w-6 h-6 text-ternary-dark dark:text-ternary-light mr-2"></i>
+					<!-- <i data-feather="alert-circle" class="w-6 h-6 text-ternary-dark dark:text-ternary-light mr-2"></i> -->
 					Contract form data has already been sent!!!
 				</p>
 			</div>
