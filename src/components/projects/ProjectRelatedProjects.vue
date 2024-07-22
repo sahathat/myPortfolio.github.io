@@ -15,7 +15,7 @@ export default {
 
 		<div class="grid grid-cols-1 sm:grid-cols-4 gap-10">
 			<div v-for="item in relatedProject.relatedProjects" :key="item.id">
-				<img :src="item.img" class="rounded-xl cursor-pointer"
+				<img v-lazy="item.img" class="rounded-xl cursor-pointer"
 						:alt="item.title" /> <p class="font-general-regular text-ternary-dark dark:text-ternary-light">{{ item.title }}</p>
 			</div>
 		</div>

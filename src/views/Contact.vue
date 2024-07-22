@@ -51,6 +51,5 @@ export default {
 		<!-- Contact details -->
 		<ContactDetails :contacts="contacts" />
 
-		
 	</div>
 </template>
