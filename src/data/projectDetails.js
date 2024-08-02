@@ -538,7 +538,7 @@ const projectDetails = [
                 },
                 {
                     id: 3,
-                    title: 'Website',
+                    title: 'Github',
                     details: 'https://github.com/sahathat/dataSci/blob/main/Bigdata/projects/Group9_Report-Group9.pdf',
                 }
             ],
