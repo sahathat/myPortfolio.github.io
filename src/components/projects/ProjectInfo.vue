@@ -26,7 +26,7 @@ export default {
 					<li v-for="info in projectInfo.companyInfos" :key="info"
 						class="font-general-regular text-ternary-dark dark:text-ternary-light">
 						<span>{{ info.title }}:
-							<button type="button" v-if="info.title == 'Website' || info.title == 'Phone'"
+							<button type="button" v-if="info.title == 'Website' || info.title == 'Phone' || info.title == 'Github'"
 								class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">
 								<a :href="info.details" class='hover:underline cursor-pointer items-center'
 									aria-label="Project Website and Phone">
