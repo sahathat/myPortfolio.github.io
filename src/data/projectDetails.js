@@ -328,7 +328,7 @@ const projectDetails = [
                 },
                 {
                     id: 3,
-                    title: 'Website',
+                    title: 'Github',
                     details: 'https://github.com/sahathat/GoogleCertADA',
                 }
             ],
@@ -446,7 +446,7 @@ const projectDetails = [
                 },
                 {
                     id: 3,
-                    title: 'Website',
+                    title: 'Github',
                     details: 'https://github.com/sahathat/OASIP-AT-3',
                 }
             ],
@@ -600,6 +600,109 @@ const projectDetails = [
             relatedProjects: shuffle(projects.filter(pj => pj.id !== 5)).slice(0,4)
         },
     },
+    {
+        id: 6,
+        singleProjectHeader: {
+            singleProjectTitle: 'SIT hello world - Submarine',
+            singleProjectDate: 'October, 2020 - November, 2020',
+            singleProjectTag: 'Game development',
+        },
+        projectImages: [
+            {
+                id: 1,
+                title: 'Menu',
+                img: require('@/assets/images/projects/6-helloworld.png')
+            },
+            {
+                id: 2,
+                title: 'Gameplay 1',
+                img: require('@/assets/images/projects/6-helloworld-1.png')
+            },
+            {
+                id: 3,
+                title: 'Gameplay 2',
+                img: require('@/assets/images/projects/6-helloworld-2.png')
+            },
+        ],
+        projectInfo: {
+            clientHeading: 'Project Info',
+            companyInfos: [
+                {
+                    id: 1,
+                    title: 'Company Name/University',
+                    details: 'KMUTT',
+                },
+                {
+                    id: 2,
+                    title: 'Responsibility',
+                    details: 'Game development',
+                },
+                {
+                    id: 3,
+                    title: 'Github',
+                    details: 'https://github.com/Hello-Dolphin/hellodolphin-gameproject-8/tree/master?tab=readme-ov-file',
+                }
+            ],
+            objectivesHeading: 'Objective',
+            objectivesDetails:
+                'Develop game development for playing as role submarine and will pass obstacles before find treasure at the end',
+            technologies: [
+                {
+                    title: 'Tools & Technologies',
+                    techs: [
+                        'Phaser3.js',
+                        'Yarn',
+                        "Nginx",
+                        "Docker"
+                    ],
+                },
+            ],
+            projectDetailsHeading: 'Challenge',
+            projectDetails: [
+                {
+                    id: 1,
+                    details:
+                        'Implemented game image and sprite from designer to make movement and animation',
+                },
+                {
+                    id: 2,
+                    details:
+                        'Developed game to interesting and response to user with any page',
+                }
+            ],
+            socialSharingsHeading: 'Share This',
+            socialSharings: [
+                {
+                    id: 1,
+                    name: 'Instagram',
+                    icon: 'instagram',
+                    url: 'https://instagram.com/',
+                },
+                {
+                    id: 2,
+                    name: 'Facebook',
+                    icon: 'facebook',
+                    url: 'https://facebook.com/',
+                },
+                {
+                    id: 3,
+                    name: 'LinkedIn',
+                    icon: 'linkedin',
+                    url: 'https://linkedin.com/',
+                },
+                {
+                    id: 4,
+                    name: 'Youtube',
+                    icon: 'youtube',
+                    url: 'https://www.youtube.com/',
+                },
+            ],
+        },
+        relatedProject: {
+            relatedProjectsHeading: 'Related Projects',
+            relatedProjects: shuffle(projects.filter(pj => pj.id !== 6)).slice(0,4)
+        },
+    }
 ];
 
 export default projectDetails;

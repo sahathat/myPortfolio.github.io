@@ -13,6 +13,7 @@ export default {
 				'Machine Learning',
 				'Dashboard',
 				'Explorational Data Analysis',
+				'Game Development'
 			],
 		},
 	},

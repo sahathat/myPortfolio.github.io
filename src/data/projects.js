@@ -31,6 +31,12 @@ const projects = [
 		title: 'CSGO winner classification',
 		category: ['Machine Learning'],
 		img: require('@/assets/images/projects/ML.png'),
+	},
+	{
+		id: 6,
+		title: "Submarine",
+		category: ["Web Application","Game Development"],
+		img: require('@/assets/images/projects/6-helloworld.png')
 	}
 ];
 
