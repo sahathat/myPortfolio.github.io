@@ -20,7 +20,6 @@ const shuffle = (array) => {
 
 const projectDetails = [
     {
-        id: 1,
         singleProjectHeader: {
             singleProjectTitle: 'Gofive Product',
             singleProjectDate: '2 Sep, 2024 - 27 Dec, 2024',
@@ -128,9 +127,155 @@ const projectDetails = [
             ]
         }
     },
-
     {
-        id: 2,
+        id: 1,
+        singleProjectHeader: {
+            singleProjectTitle: 'Leafy',
+            singleProjectDate: '8 Aug, 2023 - 29 Apr, 2024',
+            singleProjectTag: 'Web Application / Machine Learning / Backend Development / Database Administrator',
+        },
+        projectImages: [
+            {
+                id: 1,
+                title: 'Shop Page',
+                img: require('@/assets/images/projects/1-Leafy.png'),
+            },
+            {
+                id: 2,
+                title: 'Product Detail Page',
+                img: require('@/assets/images/projects/1-Leafy-1.png'),
+            },
+            {
+                id: 3,
+                title: 'Review & Recommender Page',
+                img: require('@/assets/images/projects/1-Leafy-2.png'),
+            },
+            {
+                id: 4,
+                title: 'Order Page',
+                img: require('@/assets/images/projects/1-Leafy-3.png'),
+            },
+            {
+                id: 5,
+                title: 'Profile Page',
+                img: require('@/assets/images/projects/1-Leafy-4.png'),
+            },
+            {
+                id: 6,
+                title: 'Gallery Content Page',
+                img: require('@/assets/images/projects/1-Leafy-5.png'),
+            },
+            {
+                id: 7,
+                title: 'Gallery List Page',
+                img: require('@/assets/images/projects/1-Leafy-6.png'),
+            },
+            {
+                id: 8,
+                title: 'Product Creation Page',
+                img: require('@/assets/images/projects/1-Leafy-7.png'),
+            },
+            {
+                id: 9,
+                title: 'Supplier Order Page',
+                img: require('@/assets/images/projects/1-Leafy-8.png'),
+            }
+        ],
+        projectInfo: {
+            clientHeading: 'Project Info',
+            companyInfos: [
+                {
+                    id: 1,
+                    title: 'Company Name/University',
+                    details: 'KMUTT',
+                },
+                {
+                    id: 2,
+                    title: 'Responsibility',
+                    details: 'Fullstack Development, Recommender System, Infrastructure',
+                },
+                {
+                    id: 3,
+                    title: 'Website',
+                    details: 'https://capstone23.sit.kmutt.ac.th/pl4/',
+                }
+            ],
+            objectivesHeading: 'Objective',
+            objectivesDetails:
+                'Leafy is a Web Application for online trading of gardening and gardening products, which facilitates the general public who likes and is interested in planting trees and gardening design. look like Shopee platform',
+            technologies: [
+                {
+                    title: 'Tools & Technologies',
+                    techs: [
+                        'Vue.js',
+                        'CSS',
+                        "Node.js (Express.js)",
+                        'Prisma.js',
+                        'MySQL',
+                        'Minio',
+                        'Docker',
+                        'Git',
+                        "Nginx"
+                    ],
+                },
+            ],
+            projectDetailsHeading: 'Challenge',
+            projectDetails: [
+                {
+                    id: 1,
+                    details:
+                        'Made features recommender system to recommend products who like or interest with user, product and rating review by using content-based filtering like weight ranking model on Node.js.',
+                },
+                {
+                    id: 2,
+                    details:
+                        'Made product customization with item in each SKU. Make sure seller can refill stock and change price in each SKU and detail.',
+                },
+                {
+                    id: 3,
+                    details:
+                        'Made product list who can filter, sort data and made into pagination list before response into dynamic web browser.',
+                },
+                {
+                    id: 4,
+                    details:
+                        'Made cart and order list with multiple store who can add item on cart in each group store or place on order with item and address. check status in each order in store before paid, prepared package, transited, received item and reviewed with optional.',
+                },
+            ],
+            socialSharingsHeading: 'Share This',
+            socialSharings: [
+                {
+                    id: 1,
+                    name: 'Instagram',
+                    icon: 'instagram',
+                    url: 'https://instagram.com/',
+                },
+                {
+                    id: 2,
+                    name: 'Facebook',
+                    icon: 'facebook',
+                    url: 'https://facebook.com/',
+                },
+                {
+                    id: 3,
+                    name: 'LinkedIn',
+                    icon: 'linkedin',
+                    url: 'https://linkedin.com/',
+                },
+                {
+                    id: 4,
+                    name: 'Youtube',
+                    icon: 'youtube',
+                    url: 'https://www.youtube.com/',
+                },
+            ],
+        },
+        relatedProject: {
+            relatedProjectsHeading: 'Related Projects',
+            relatedProjects: shuffle(projects.filter(pj => pj.id !== 1)).slice(0,4)
+        },
+    },
+    {
         singleProjectHeader: {
             singleProjectTitle: 'IT Help Desk',
             singleProjectDate: '31 May 2023 - 4 Aug, 2023',
@@ -220,7 +365,6 @@ const projectDetails = [
     },
 
     {
-        id: 3,
         singleProjectHeader: {
             singleProjectTitle: 'Google Certificate Salifort Motors Company - Why employee left?',
             singleProjectDate: 'August, 2023 - December, 2023',
@@ -306,7 +450,6 @@ const projectDetails = [
     },
 
     {
-        id: 4,
         singleProjectHeader: {
             singleProjectTitle: 'OASIP (Online Appointment Scheduling System For Integrated Project Clinics)',
             singleProjectDate: 'April, 2022 - December, 2022',
