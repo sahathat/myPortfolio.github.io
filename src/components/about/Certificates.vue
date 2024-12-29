@@ -1,9 +1,9 @@
 <script>
-import AboutClientSingle from './AboutClientSingle.vue';
+import CertificateSingle from './CertificateSingle.vue';
 
 export default {
 	components: {
-		AboutClientSingle,
+		CertificateSingle,
 	},
 	data: () => {
 		return {
@@ -53,7 +53,7 @@ export default {
 			{{ clientsHeading }}
 		</p>
 		<div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
-			<AboutClientSingle
+			<CertificateSingle
 				v-for="client in clients"
 				:key="client.id"
 				:client="client"

@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 import counter from 'vue3-autocounter';
 export default {
 	components: {
@@ -6,11 +7,47 @@ export default {
 	},
 	data: () => {
 		return {
-			experienceTitle: 'Years of experience',
+			username: "sahathat",
+			repos: 0,
+			suffix: '',
+			experienceTitle: 'Years of experience (Month)',
 			githubTitle: 'Stars on GitHub',
 			feedbackTitle: 'Positive feedback',
 			projectsTitle: 'Projects completed',
 		};
+	},
+	methods: {
+		async fetchStarredRepos() {
+			if (!this.username) {
+				this.error = 'Please enter a username.';
+				return;
+			}
+
+			this.loading = true;
+			this.error = null;
+
+			try {
+				const response = await axios.get(
+					`https://api.github.com/users/${this.username}/starred`, {
+						header: { Authorization: `Bearer ${process.env.VUE_APP_GITHUB_TOKEN}` }
+					}
+				);
+				this.repos = response.data.length;
+				this.suffix = this.repos > 999999 ? '+m' : this.repos > 999 ? '+k' : ''
+			} catch (err) {
+				this.error =
+				err.response?.data?.message || 'An error occurred while fetching data.';
+			} finally {
+				this.loading = false;
+			}
+		},
+	},
+	mounted() {
+		// Debounce API call to avoid too many requests
+		clearTimeout(this.debounceTimeout);
+		this.debounceTimeout = setTimeout(() => {
+			this.fetchStarredRepos();
+		}, 500); // Adjust debounce time as needed
 	},
 };
 </script>
@@ -26,10 +63,9 @@ export default {
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="0"
+					:endAmount="4"
 					:duration="1"
 					:autoinit="true"
-					@finished="alert(`Counting finished!`)"
 					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 					aria-label="About Status Counter"
 				/>
@@ -45,11 +81,10 @@ export default {
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="20"
+					:endAmount="repos"
 					:duration="1"
-					suffix="k+"
+					:suffix="suffix"
 					:autoinit="true"
-					@finished="alert(`Counting finished!`)"
 					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span
@@ -63,11 +98,10 @@ export default {
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="92"
+					:endAmount="75"
 					:duration="1"
 					suffix="%"
 					:autoinit="true"
-					@finished="alert(`Counting finished!`)"
 					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span
@@ -82,10 +116,9 @@ export default {
 				<counter
 					ref="counter"
 					:startAmount="0"
-					:endAmount="77"
+					:endAmount="7"
 					:duration="1"
 					:autoinit="true"
-					@finished="alert(`Counting finished!`)"
 					class="font-general-medium text-4xl font-bold text-secondary-dark dark:text-secondary-light mb-2"
 				/>
 				<span

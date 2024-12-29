@@ -3,41 +3,49 @@
 
 const projects = [
 	{
-		id: 1,
+		title: 'Gofive Projects',
+		category: ['Web Application','Desktop','Machine Learning','Dashboard'],
+		img: require('@/assets/images/projects/7-Gofive-1.png'),
+	},
+	{
 		title: 'Leafy',
 		category: ['Web Application','Machine Learning'],
 		img: require('@/assets/images/projects/1-Leafy.png'),
 	},
 	{
-		id: 2,
 		title: 'Moral IT Help Desk',
 		category: ['Web Application','Dashboard'],
 		img: require('@/assets/images/projects/2-ITHelpDesk.png'),
 	},
 	{
-		id: 3,
 		title: 'Google Certificate Salifort Motors Company - Why employee left?',
 		category: ['Explorational Data Analysis','Dashboard',"Machine Learning"],
 		img: require('@/assets/images/projects/3-SalifortMotors.png'),
 	},
 	{
-		id: 4,
 		title: 'OASIP (Online Appointment Scheduling System For Integrated Project Clinics)',
 		category: ['Web Application'],
 		img: require('@/assets/images/projects/4-OASIP.png'),
 	},
 	{
-		id: 5,
 		title: 'CSGO winner classification',
 		category: ['Machine Learning'],
 		img: require('@/assets/images/projects/ML.png'),
 	},
 	{
-		id: 6,
 		title: "Submarine",
 		category: ["Web Application","Game Development"],
 		img: require('@/assets/images/projects/6-helloworld.png')
 	}
 ];
 
-export default projects;
+function addIncrementingIds(projectArray) {
+	return projectArray.map((project, index) => ({
+		...project,
+		id: index + 1, // Add an `id` property starting from 1
+	}));
+}
+  
+const updatedProjects = addIncrementingIds(projects);
+
+export default updatedProjects;

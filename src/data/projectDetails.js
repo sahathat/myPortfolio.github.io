@@ -22,55 +22,40 @@ const projectDetails = [
     {
         id: 1,
         singleProjectHeader: {
-            singleProjectTitle: 'Leafy',
-            singleProjectDate: '8 Aug, 2023 - 29 Apr, 2024',
-            singleProjectTag: 'Web Application / Machine Learning / Backend Development / Database Administrator',
+            singleProjectTitle: 'Gofive Product',
+            singleProjectDate: '2 Sep, 2024 - 27 Dec, 2024',
+            singleProjectTag: 'LucA / Card Inventory / RFID Face recogination',
         },
         projectImages: [
             {
                 id: 1,
-                title: 'Shop Page',
-                img: require('@/assets/images/projects/1-Leafy.png'),
+                title: 'LucA console',
+                img: require('@/assets/images/projects/7-Gofive-Evidence1.png'),
             },
             {
                 id: 2,
-                title: 'Product Detail Page',
-                img: require('@/assets/images/projects/1-Leafy-1.png'),
+                title: 'LucA main',
+                img: require('@/assets/images/projects/7-Gofive-Evidence2.png'),
             },
             {
                 id: 3,
-                title: 'Review & Recommender Page',
-                img: require('@/assets/images/projects/1-Leafy-2.png'),
+                title: 'LucA file progress',
+                img: require('@/assets/images/projects/7-Gofive-Evidence3.png'),
             },
             {
                 id: 4,
-                title: 'Order Page',
-                img: require('@/assets/images/projects/1-Leafy-3.png'),
+                title: 'Stock report excel',
+                img: require('@/assets/images/projects/7-Gofive-Evidence4.png'),
             },
             {
                 id: 5,
-                title: 'Profile Page',
-                img: require('@/assets/images/projects/1-Leafy-4.png'),
+                title: 'Stock report pdf',
+                img: require('@/assets/images/projects/7-Gofive-Evidence5.png'),
             },
             {
                 id: 6,
-                title: 'Gallery Content Page',
-                img: require('@/assets/images/projects/1-Leafy-5.png'),
-            },
-            {
-                id: 7,
-                title: 'Gallery List Page',
-                img: require('@/assets/images/projects/1-Leafy-6.png'),
-            },
-            {
-                id: 8,
-                title: 'Product Creation Page',
-                img: require('@/assets/images/projects/1-Leafy-7.png'),
-            },
-            {
-                id: 9,
-                title: 'Supplier Order Page',
-                img: require('@/assets/images/projects/1-Leafy-8.png'),
+                title: 'Face recogination testing',
+                img: require('@/assets/images/projects/7-Gofive-Evidence6.png'),
             }
         ],
         projectInfo: {
@@ -79,35 +64,27 @@ const projectDetails = [
                 {
                     id: 1,
                     title: 'Company Name/University',
-                    details: 'KMUTT',
+                    details: 'Gofive',
                 },
                 {
                     id: 2,
                     title: 'Responsibility',
-                    details: 'Fullstack Development, Recommender System, Infrastructure',
-                },
-                {
-                    id: 3,
-                    title: 'Website',
-                    details: 'https://capstone23.sit.kmutt.ac.th/pl4/',
+                    details: 'Securities operation system, Backend development',
                 }
             ],
             objectivesHeading: 'Objective',
             objectivesDetails:
-                'Leafy is a Web Application for online trading of gardening and gardening products, which facilitates the general public who likes and is interested in planting trees and gardening design. look like Shopee platform',
+                'To design print layouts and develop software for verifying the accuracy of printed securities and other document types, ensuring precise and timely delivery to clients while optimizing the production process. Additionally, to support card production by generating comprehensive reports summarizing results.',
             technologies: [
                 {
                     title: 'Tools & Technologies',
                     techs: [
-                        'Vue.js',
-                        'CSS',
-                        "Node.js (Express.js)",
-                        'Prisma.js',
-                        'MySQL',
-                        'Minio',
-                        'Docker',
-                        'Git',
-                        "Nginx"
+                        'C#/.Net (ASP.Net)',
+                        'MS SQL Server',
+                        "Python (opercv2)",
+                        '.Net Framework',
+                        'Inspire Design (PNet)',
+                        'Rabbit MQ',
                     ],
                 },
             ],
@@ -116,56 +93,40 @@ const projectDetails = [
                 {
                     id: 1,
                     details:
-                        'Made features recommender system to recommend products who like or interest with user, product and rating review by using content-based filtering like weight ranking model on Node.js.',
+                        'LucA: To design print layouts and develop software for verifying the accuracy of printed securities and other document types, ensuring precise and timely delivery to clients while optimizing the production process. Additionally, to support card production by generating comprehensive reports summarizing results.',
                 },
                 {
                     id: 2,
                     details:
-                        'Made product customization with item in each SKU. Make sure seller can refill stock and change price in each SKU and detail.',
+                        'LucA: To manage sales and client communication by coordinating the development of new printing products for securities. This involves transforming the data into a format suitable for production, followed by client approval and testing of print positions. The process includes thorough QA checks and system integration via Unit Tests. Ensuring accuracy at every stage is crucial for the successful creation of the product.',
                 },
                 {
                     id: 3,
                     details:
-                        'Made product list who can filter, sort data and made into pagination list before response into dynamic web browser.',
+                        'LucA: To resolve bugs or errors in the system through data control by identifying the root cause and reporting it to the management. In some cases, this may require fixing issues within the system or addressing discrepancies in the clien\'s data.',
                 },
                 {
                     id: 4,
                     details:
-                        'Made cart and order list with multiple store who can add item on cart in each group store or place on order with item and address. check status in each order in store before paid, prepared package, transited, received item and reviewed with optional.',
-                },
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
+                        'PNet: To utilize the specialized software, Inspire Designer, for designing and editing print layouts that serve as templates for printing. This program supports handling large volumes of client data for each product, ensuring efficient and scalable production.',
                 },
                 {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
+                    id: 5,
+                    details:
+                        'LucA: In the securities work for SCBS, the Balance Statement is generated by consolidating data from multiple files. This requires developing a new class to handle the integration of data from various sources and modifying the system to support the efficient production of print files. The system is designed to produce over 600,000 sets per year within a fast turnaround time, ensuring accurate and timely output.',
                 },
                 {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
+                    id: 6,
+                    details:
+                        'Card Inventory: To create an API for generating Excel reports and integrate it with the requirements provided by the Project Manager. The API should ensure consistency in the data and feed the results into a dashboard for easy tracking and visualization of key metrics and progress.',
                 },
                 {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
-        },
-        relatedProject: {
-            relatedProjectsHeading: 'Related Projects',
-            relatedProjects: shuffle(projects.filter(pj => pj.id !== 1)).slice(0,4)
-        },
+                    id: 7,
+                    details:
+                        'RFID Face Recogination: To develop a Python-based face detection system utilizing RFID and a research-specific model to achieve an accuracy rate above 99%. The system should effectively detect faces and generate summary results, incorporating advanced techniques for improved face recognition and prediction.',
+                }
+            ]
+        }
     },
 
     {
@@ -254,39 +215,8 @@ const projectDetails = [
                     details:
                         'Made recommendation articles service with upload file in each session, and show sequence data.',
                 }
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
-                },
-                {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
-                },
-                {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
-                },
-                {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
-        },
-        relatedProject: {
-            relatedProjectsHeading: 'Related Projects',
-            relatedProjects: shuffle(projects.filter(pj => pj.id !== 2)).slice(0,4)
-        },
+            ]
+        }
     },
 
     {
@@ -367,34 +297,7 @@ const projectDetails = [
                     details:
                         'Implement the insight data for storytelling and improving decision in organization',
                 }
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
-                },
-                {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
-                },
-                {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
-                },
-                {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
+            ]
         },
         relatedProject: {
             relatedProjectsHeading: 'Related Projects',
@@ -479,43 +382,11 @@ const projectDetails = [
                     details:
                         'Used spring security implement to authentication and authorization in each role such as student, lecturer and admin',
                 }
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
-                },
-                {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
-                },
-                {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
-                },
-                {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
-        },
-        relatedProject: {
-            relatedProjectsHeading: 'Related Projects',
-            relatedProjects: shuffle(projects.filter(pj => pj.id !== 4)).slice(0,4)
-        },
+            ]
+        }
     },
 
     {
-        id: 5,
         singleProjectHeader: {
             singleProjectTitle: 'CSGO winner classification',
             singleProjectDate: 'November, 2023 - December, 2023',
@@ -566,42 +437,10 @@ const projectDetails = [
                     details:
                         'Used Neural Network like Multi layer perceptron to predict wining class and evaluation metric',
                 }
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
-                },
-                {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
-                },
-                {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
-                },
-                {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
-        },
-        relatedProject: {
-            relatedProjectsHeading: 'Related Projects',
-            relatedProjects: shuffle(projects.filter(pj => pj.id !== 5)).slice(0,4)
-        },
+            ]
+        }
     },
     {
-        id: 6,
         singleProjectHeader: {
             singleProjectTitle: 'SIT hello world - Submarine',
             singleProjectDate: 'October, 2020 - November, 2020',
@@ -669,40 +508,49 @@ const projectDetails = [
                     details:
                         'Developed game to interesting and response to user with any page',
                 }
-            ],
-            socialSharingsHeading: 'Share This',
-            socialSharings: [
-                {
-                    id: 1,
-                    name: 'Instagram',
-                    icon: 'instagram',
-                    url: 'https://instagram.com/',
-                },
-                {
-                    id: 2,
-                    name: 'Facebook',
-                    icon: 'facebook',
-                    url: 'https://facebook.com/',
-                },
-                {
-                    id: 3,
-                    name: 'LinkedIn',
-                    icon: 'linkedin',
-                    url: 'https://linkedin.com/',
-                },
-                {
-                    id: 4,
-                    name: 'Youtube',
-                    icon: 'youtube',
-                    url: 'https://www.youtube.com/',
-                },
-            ],
-        },
+            ]
+        }
+    }
+];
+
+function addIncrementingIds(projectArray) {
+    return projectArray.map((project, index) => ({
+        id: index + 1, // Add an `id` property starting from 1
+        ...project,
+        socialSharingsHeading: 'Share This',
+        socialSharings: [
+            {
+                id: 1,
+                name: 'Instagram',
+                icon: 'instagram',
+                url: 'https://instagram.com/',
+            },
+            {
+                id: 2,
+                name: 'Facebook',
+                icon: 'facebook',
+                url: 'https://facebook.com/',
+            },
+            {
+                id: 3,
+                name: 'LinkedIn',
+                icon: 'linkedin',
+                url: 'https://linkedin.com/',
+            },
+            {
+                id: 4,
+                name: 'Youtube',
+                icon: 'youtube',
+                url: 'https://www.youtube.com/',
+            },
+        ],
         relatedProject: {
             relatedProjectsHeading: 'Related Projects',
             relatedProjects: shuffle(projects.filter(pj => pj.id !== 6)).slice(0,4)
         },
-    }
-];
+	}));
+}
+  
+const updatedProjectDetails = addIncrementingIds(projectDetails);
 
-export default projectDetails;
+export default updatedProjectDetails;
