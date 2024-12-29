@@ -546,7 +546,7 @@ function addIncrementingIds(projectArray) {
         ],
         relatedProject: {
             relatedProjectsHeading: 'Related Projects',
-            relatedProjects: shuffle(projects.filter(pj => pj.id !== 6)).slice(0,4)
+            relatedProjects: shuffle(projects.filter(pj => pj.id !== index + 1)).slice(0,4)
         },
 	}));
 }
