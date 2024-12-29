@@ -128,7 +128,6 @@ const projectDetails = [
         }
     },
     {
-        id: 1,
         singleProjectHeader: {
             singleProjectTitle: 'Leafy',
             singleProjectDate: '8 Aug, 2023 - 29 Apr, 2024',
