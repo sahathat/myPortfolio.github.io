@@ -3,8 +3,7 @@ export default {
 	props: {
 		select: {
 			type: String,
-			default: 'projects',
-			required: true,
+			default: 'projects'
 		},
 		selectOptions: {
 			type: Array,
