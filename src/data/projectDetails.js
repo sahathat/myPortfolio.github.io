@@ -84,6 +84,7 @@ const projectDetails = [
                         '.Net Framework',
                         'Inspire Design (PNet)',
                         'Rabbit MQ',
+                        "Azure DevOps"
                     ],
                 },
             ],
