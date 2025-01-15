@@ -197,9 +197,13 @@ const projectDetails = [
                 },
                 {
                     id: 3,
-                    title: 'Website',
-                    details: 'https://capstone23.sit.kmutt.ac.th/pl4/',
-                }
+                    title: 'Github',
+                    details: 'https://github.com/orgs/leafy-shop/repositories',
+                }, {
+                    id: 4,
+                    title: 'Note',
+                    details: 'This is senior projects portfolio use SIT D-day boost for showing and presenting archivements.',
+                },
             ],
             objectivesHeading: 'Objective',
             objectivesDetails:
